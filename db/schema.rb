@@ -15,8 +15,8 @@ ActiveRecord::Schema.define(version: 20150714220814) do
 
   create_table "authors", force: :cascade do |t|
     t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "books", force: :cascade do |t|
@@ -25,8 +25,8 @@ ActiveRecord::Schema.define(version: 20150714220814) do
     t.integer  "author_id"
     t.string   "publisher_type"
     t.integer  "publisher_id"
-    t.datetime "created_at",                             null: false
-    t.datetime "updated_at",                             null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
     t.index ["author_id"], name: "index_books_on_author_id"
     t.index ["publisher_type", "publisher_id"], name: "index_books_on_publisher_type_and_publisher_id"
   end
@@ -34,8 +34,8 @@ ActiveRecord::Schema.define(version: 20150714220814) do
   create_table "publishing_houses", force: :cascade do |t|
     t.string   "name"
     t.decimal  "discount",   precision: 2, scale: 2
-    t.datetime "created_at",                         null: false
-    t.datetime "updated_at",                         null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

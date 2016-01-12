@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', path: "/Users/admin/work/sandbox/rails"
+gem 'rails', path: "/Users/marshallshen/ContextMedia/rails"
 gem 'sprockets-rails', github: "rails/sprockets-rails"
 gem 'arel', github: "rails/arel"
 
